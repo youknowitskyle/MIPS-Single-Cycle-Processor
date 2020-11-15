@@ -25,7 +25,6 @@ module mips(input          clk, reset,
 endmodule
 
 
-// Todo: Implement controller module
 module controller(input   [5:0] op, funct,
                   input         zero,
                   output reg       memtoreg, memwrite,
@@ -165,7 +164,6 @@ always @(op or funct) begin                                         // ALU op de
 endmodule
 
 
-// Todo: Implement datapath
 module datapath(input          clk, reset,
                 input          memtoreg, pcsrc,
                 input          alusrc, regdst,
