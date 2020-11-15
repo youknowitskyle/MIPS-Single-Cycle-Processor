@@ -4,7 +4,7 @@ A 32-bit single cycle MIPS processor implemented using Verilog.
 
 Instructions are read from a file named "memfile.dat". Two test files are included.
 
-### First Test File in Assembly
+### First Test File (memfile.dat) in Assembly
 ```
 main: 
     addi $2, $0, 5 
@@ -29,7 +29,7 @@ end:
     sw $2, 84($0)
 ```
 
-### Second Test File in Assembly
+### Second Test File (memfile2.dat) in Assembly
 ```
 main: 
     ori $t0, $0, 0x8000
