@@ -1,10 +1,26 @@
-# MIPS-Single-Cycle-Processor
+# MIPS Single Cycle Processor
 
 A 32-bit single cycle MIPS processor implemented using Verilog.
 
 Instructions are read from a file named "memfile.dat". Two test files are included.
 
-### First Test File (memfile.dat) in MIPS Assembly
+## Supported Instructions:
+`
+  add
+  sub
+  and
+  or
+  slt
+  lw
+  sw
+  beq
+  addi
+  j
+  ori
+  bne
+`
+  
+### First Sample Test File (memfile.dat) in MIPS Assembly
 ```
 main: 
     addi $2, $0, 5 
@@ -29,7 +45,7 @@ end:
     sw $2, 84($0)
 ```
 
-### Second Test File (memfile2.dat) in MIPS Assembly
+### Second Sample Test File (memfile2.dat) in MIPS Assembly
 ```
 main: 
     ori $t0, $0, 0x8000
@@ -48,19 +64,3 @@ there:
     sw $t0, 82($t3)
 ```
 
-## Supported Instructions:
-`
-  add
-  sub
-  and
-  or
-  slt
-  lw
-  sw
-  beq
-  addi
-  j
-  ori
-  bne
-`
-  
